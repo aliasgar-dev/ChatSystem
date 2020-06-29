@@ -115,8 +115,8 @@ module.exports = function MyService(config) {
                         if(err){
                             return;
                         }
-                        var socketId = self.userMap[info.userId].socketId
-                        console.log('-------socketId-----',socketId)
+                        // var socketId = self.userMap[info.userId].socketId
+                        // console.log('-------socketId-----',socketId)
                         self.socket.emit("ON_USER_MSG_"+info.userId,userMsg);
                     });
                 });
