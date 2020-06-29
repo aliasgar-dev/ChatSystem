@@ -9,6 +9,11 @@ $(document).ready(function(){
 	$('#sendMessage').on("click",sendMessage);
 	$('#getMessage').on("click",handleGetMessage);
 	$('#shareDetailTab').on("click",handleShareDetailTab);
+	$('#messageData').on('keydown',function(e){
+		if(e.which == 13){
+			sendMessage()
+		}
+	})
 	// console.log('---socket----',socket)
 	
 	function getLoginFormData(){
@@ -290,6 +295,8 @@ $(document).ready(function(){
 			let timestamp = moment(new Date()).format('llll')
 			var obj = {msg:mesageData,timestamp:timestamp}
 			$("#usersMsgsHldr").append(renderUserMsgs(obj));
+  			$("#usersMsgsHldr").animate({ scrollTop: $(document).height() }, 100);
+
 		}
 		else{
 			alert("Please type")
