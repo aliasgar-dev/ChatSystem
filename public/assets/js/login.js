@@ -207,7 +207,10 @@ $(document).ready(function(){
 	function getConnection(){
 		var token = localStorage.getItem("token");
 		if(!socket){
-			socket = io("http://ec2-18-221-152-38.us-east-2.compute.amazonaws.com",{transports: ['websocket'],query:{token:token}});
+			socket = io("http://ec2-18-221-152-38.us-east-2.compute.amazonaws.com:4000",{transports: ['websocket'],query:{token:token}});
+			socket.on('connect',()=>{
+				console.log('----connected')
+			})
 			initialiseSocketEvent();
 		}
 		return true
