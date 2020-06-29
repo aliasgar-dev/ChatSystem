@@ -59,24 +59,24 @@
             <section>
             <div class="container">
                 <div class="row card flex-row" style="text-align: center;">
-                    <div class="col-auto">
-                        <div id="usersHldr"></div>
+                    <div class=""style="height: 70vh;overflow: scroll;background-color: #007bff;color: white; width: 150px;">
+                        <div id="usersHldr" style="height: 100%;padding: unset;"></div>
                     </div>
                     <!--end of col-->
-                    <div id="messageArea" class="col ">
-                        <div class="card-header d-flex justify-content-between align-items-center">
+                    <div id="messageArea" class="col " style="height: 70vh;padding: unset; width: 100%">
+                        <div class="card-header justify-content-between align-items-center" style="background-color: #007bff;color: white;">
                             <div class="media align-items-center" id="chatUserName">
                                 
                             </div>
                         </div>
                         <!--end card header-->
-                       <div id="usersMsgsHldr"></div>
-                        <div class="card-footer bg-secondary">
+                       <div id="usersMsgsHldr"style="overflow: scroll;height: 48vh;"></div>
+                        <div class="card-footer bg-primary">
                             <form class="d-flex align-items-center">
                                 <div class="input-group input-group-lg">
                                     <input class="form-control" type="text" placeholder="Type a message" name="message" id="messageData"  autocomplete="off" />
                                 </div>
-                                <span id="sendMessage" class="btn btn-link pr-0" style="color: black; font-weight: bold;">Submit
+                                <span id="sendMessage" class="msgSubmit" >Submit
                                 </span>
                             </form>
                         </div>

@@ -5,8 +5,15 @@
     font-weight: bold;
     cursor: pointer;
 }
+.msgSubmit{
+    color: white;
+    font-weight: bold;
+    border: 2px solid;
+    padding: 5px 10px 5px 10px !important;
+    margin-left: 5px;
+}
 .chatUserCls:hover{
-     background-color:#ff00ff !important;
+    background-color: #4582ec  !important;
 }
 body {
   margin: 0;

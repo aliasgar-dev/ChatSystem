@@ -99,7 +99,7 @@ $(document).ready(function(){
 	function getChatUserNametmpl() {
 	  return `
 	  	<div class="media-body">
-            <h6 class="mb-0 d-block">{{username}}
+            <h6 class="mb-0 d-block" style="color:white;">{{username}}
             <span class="badge badge-indicator badge-success"></span>
             </h6>
         </div>
@@ -109,9 +109,9 @@ $(document).ready(function(){
 	function gettmpl() {
 	  return `
 	  	<div class="list-group list-group-chat list-group-flush">
-            <div class="media-body d-none d-lg-block ml-2" id=user_{{_id}}>
-                <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="mb-0 chatUserCls">{{username}}
+            <div class="media-body d-none d-lg-block" id=user_{{_id}}>
+                <div class=" justify-content-between align-items-center">
+                    <h6 class="mb-0 chatUserCls" style="color: white;padding: 15px 10px;border-bottom: 2px solid;">{{username}}
                     <span class="badge badge-indicator badge-success"></span>
                     </h6>
                 </div>
