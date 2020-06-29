@@ -26,7 +26,7 @@ module.exports = function SharesService(instance){
 		});
 		if(!updateShareCalled){
 			updateShareCalled = true
-			setTimeout(updateShareValue,3*1000)
+			setTimeout(updateShareValue,1*1000)
 		}
 
 	}
@@ -54,7 +54,7 @@ module.exports = function SharesService(instance){
 					console.log('----error while updating share value--',err);
 					return
 				}
-				setTimeout(updateShareValue,15*1000);
+				setTimeout(updateShareValue,3*1000);
 				console.log("shares updated successfully--")
 			});
 		});
