@@ -207,7 +207,7 @@ $(document).ready(function(){
 	function getConnection(){
 		var token = localStorage.getItem("token");
 		if(!socket){
-			socket = io("http://localhost:3000",{transports: ['websocket'],query:{token:token}});
+			socket = io("http://localhost:4000",{transports: ['websocket'],query:{token:token}});
 			initialiseSocketEvent();
 		}
 		return true
