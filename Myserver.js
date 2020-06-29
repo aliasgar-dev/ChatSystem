@@ -50,7 +50,7 @@ module.exports = function MyService(config) {
     }
     function listenPort(cb) {
       
-        var server =  app.listen("8080", ()=> {
+        var server =  app.listen(config.port, ()=> {
                 console.log("Listening on localhost:" + config.port);
                 cb(null,true)
             });
